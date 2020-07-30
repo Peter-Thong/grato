@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <title>Grato</title>
+  </head>
+  <body>
+    <div class="top">
+      <div class="gpa">
+        <div class="gpa__title">
+          GPA
+        </div>
+        <div class="gpa__value">
+          0.00
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="form">
+        <div class="form__group">
+          <select class="add__subject" id="subject">
+            <option value="java" selected>Java</option>
+            <option value="web">Web Programming</option>
+            <option value="design">Interactive User Design</option>
+            <option value="software">Sofware Design</option>
+            <option value="data">Data Network</option>
+            <option value="linux">Linux/Unix</option>
+          </select>
+          <input
+            type="number"
+            class="add__credit"
+            id="credit"
+            placeholder="Credit"
+          />
+        </div>
+
+        <div class="form__group">
+          <input
+            type="text"
+            class="add__assignment"
+            id="assignment"
+            placeholder="Assignment name"
+          />
+
+          <input
+            type="number"
+            class="add__result"
+            id="result"
+            placeholder="Result(%)"
+          />
+          <input
+            type="number"
+            class="add__percentage"
+            id="percent"
+            placeholder="% of total"
+          />
+        </div>
+
+        <button class="add__btn">
+          <i class="ion-ios-checkmark-outline"></i>
+        </button>
+      </div>
+
+      <div class="big__container clearfix">
+        <div class="container clearfix">
+          <div class="subject">
+            <h2 class="subject__title">
+              Java <span class="java__percent">0/100%</span>
+            </h2>
+            <div class="java__list">
+              <!-- <div class="item clearfix" id="java-0">
+                                <div class="item__description">Assignment 1</div>
+                                <div class="right clearfix">
+                                    <div class="item__value">5.6%</div>
+                                    <div class="item__delete">
+                                        <button class="item__delete--btn">
+                                            <i class="ion-ios-close-outline"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div> -->
+            </div>
+          </div>
+          <div class="subject">
+            <h2 class="subject__title">
+              Web Programming <span class="web__percent">0/100%</span>
+            </h2>
+            <div class="web__list"></div>
+          </div>
+          <div class="subject">
+            <h2 class="subject__title">
+              Interactive Design <span class="design__percent">0/100%</span>
+            </h2>
+
+            <div class="design__list"></div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="subject">
+            <h2 class="subject__title">
+              Software Design <span class="software__percent">0/100%</span>
+            </h2>
+            <div class="software__list"></div>
+          </div>
+          <div class="subject">
+            <h2 class="subject__title">
+              Data Network <span class="data__percent">0/100%</span>
+            </h2>
+            <div class="data__list"></div>
+          </div>
+          <div class="subject">
+            <h2 class="subject__title">
+              Linux/Unix <span class="linux__percent">0/100%</span>
+            </h2>
+
+            <div class="linux__list"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
